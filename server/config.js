@@ -27,10 +27,6 @@ module.exports = {
             }
         }
     }
-    // настройки получения хэша
-    , bcrypt: {
-        saltLength: 10
-    }
     // настройки почты
     , mail_settings: {
         service: 'Gmail' 
