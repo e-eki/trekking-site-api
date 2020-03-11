@@ -1,5 +1,0 @@
-
-### Выход из аккаунта юзера на сайте
-DELETE /api/logout/ HTTP/1.1
-Host: {{host}}
-Authorization: Token eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJhY2Nlc3MiLCJleHBpcmVzSW4iOjE1Nzc0NzQxMTUxMDUsInVzZXJJZCI6IjVlMDNhNDk0YTI0ZDQyMTAxMDA4MTk0ZiIsInVzZXJSb2xlIjoidXNlciIsImlhdCI6MTU3NzQ3MjkxNX0.WDxDBsFlf1xITknMLJODsIUR3tTYA3bGsDa7fTbhCsbHGDLbJAsOMSM0mbId-YFwtWi-dQYtHTkg2iVHm0wdfw
