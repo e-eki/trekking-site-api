@@ -29,6 +29,7 @@ router.route('/feedback')
   	.post(function(req, res) {
 		const name = req.body.name;
 		const email = req.body.email;
+		const text = req.body.text;
 		const fingerprint  = req.body.fingerprint;
 
 		return Promise.resolve(true)
@@ -58,7 +59,7 @@ router.route('/feedback')
 			})
 			.then(feedbackDataCount => {
 				if (feedbackDataCount > config.security.feedbackMaxCount) {
-					throw utils.initError(errors.VALIDATION_ERROR, 'Количество отправленных писем за сегодня с данного устройства больше допустимого. Отправьте завтра. Или обратитесь к администратору сайта.');
+					throw utils.initError(errors.VALIDATION_ERROR, 'Количество отправленных через сайт писем за сегодня с данного устройства больше допустимого. Отправьте завтра. Или обратитесь к администратору сайта.');
 				}
 
 				// сброс данных об отправке писем не за сегодня - для данного устройства  // todo: где лучше делать??
