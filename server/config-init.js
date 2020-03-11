@@ -1,7 +1,8 @@
 'use strict';
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
+//config version for Github
 
+const NODE_ENV = process.env.NODE_ENV || 'development';
 // название сайта
 const siteName = 'Путешествия за снегом';
 
@@ -10,8 +11,8 @@ module.exports = {
     // настройки сервера
     , server: {
         port: 3000   //process.env.PORT || 3000
-        , host: (NODE_ENV == 'development') ? 'localhost' : 'trekking-site.herokuapp.com'  
-        , protocol: (NODE_ENV == 'development') ? 'http' : "https"
+        , host: 'localhost' 
+        , protocol: 'http'
     }
     // название файла с логами БД
     , logFileName: 'dbLogs.log'
@@ -24,10 +25,6 @@ module.exports = {
                 , useNewUrlParser: true 
             }
         }
-    }
-    // настройки получения хэша
-    , bcrypt: {
-        saltLength: 10
     }
     // настройки почты
     , mail_settings: {
