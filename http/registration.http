@@ -1,0 +1,12 @@
+
+### Регистрация на сайте
+POST /api/registration/ HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+	"login": "vika"
+	, "email": "ifirtree@gmail.com"
+	, "password": "333"
+	, "fingerprint": "5dfa99f6732767292c1af9cf"
+}

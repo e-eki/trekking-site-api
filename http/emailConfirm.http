@@ -1,0 +1,10 @@
+
+### Повторная отправка письма подтверждения имейла
+POST /api/email-confirm/ HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+	"email": "ifirtree@gmail.com"
+	, "fingerprint": "5dfa99f6732767292c1af9cf"
+}

@@ -1,0 +1,28 @@
+
+### Вход через сайт
+POST /api/login/ HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+	"email": "ifirtree@gmail.com"
+	, "password": "1"
+	, "fingerprint": "5dfa99f6732767292c1af9cf"
+}
+
+### Завершение входа через соцсеть
+PUT /api/login/ HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+	"socialLoginDataId": "5e07bb9c5ff5281fc83d151d"
+	, "fingerprint": "5dfa99f6732767292c1af9cf"
+}
+
+### Вход через vk
+https://oauth.vk.com/authorize?client_id=6711833&display=page&scope=email&redirect_uri=http://localhost:3000/api/login&response_type=code&v=5.85&state=vk
+
+
+### Вход через google
+https://accounts.google.com/o/oauth2/auth?redirect_uri=http://localhost:3000/api/login&response_type=code&client_id=100666725887-otk617ad9448ec49096hufs8001hhel3.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/userinfo.email

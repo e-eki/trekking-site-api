@@ -1,0 +1,29 @@
+
+###
+GET /api/section/5dc1b1a04977ea31887dfbbb HTTP/1.1
+Host: {{host}}
+
+###
+POST /api/section/ HTTP/1.1
+Host: {{host}}
+Authorization: Token eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJhY2Nlc3MiLCJleHBpcmVzSW4iOjE1Nzc1NDY4NTA5MDUsInVzZXJJZCI6IjVlMDNhNDk0YTI0ZDQyMTAxMDA4MTk0ZiIsInVzZXJSb2xlIjoidXNlciIsImlhdCI6MTU3NzU0NTY1MH0.eyrhBmqXJTbbpDOzgeB0bwqGVdeiGgbU1H9Qd477N6Kab8iuXZ93kwhttccR01NziOVPZ3k0Jp7eIXqPz1XPnA
+Content-Type: application/json
+
+{
+	"name": "aaa"
+	, "description": "qeeeee1"
+}
+
+###
+PUT /api/section/5babbb4f65d1e624acdce3e0 HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+	"name": "bbb234"
+	, "description": "qeeeee1"
+}
+
+###
+GET /api/section HTTP/1.1
+Host: {{host}}
